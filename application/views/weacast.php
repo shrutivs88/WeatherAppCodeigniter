@@ -15,7 +15,7 @@
         body {
 		
           padding: 4% 2%;
-          background-color: #00bcd4; */
+          background-color: #00bcd4; 
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
@@ -114,8 +114,8 @@
 						</div>
 		                <div class="col-sm-6 descript">
 		                	<p><strong><?=$current_weather['weather'][0]['main']?>, <?=$current_weather['weather'][0]['description']?></strong></p>
-		                	<p><strong>Cloudiness:</strong> <?=$current_weather['clouds']['all']?>%</p>
-		                	<p><strong>Wind Speed:</strong> <?=$current_weather['wind']['speed']?> m/s</p>
+		                	<p><strong>Cloudiness:</strong> <?php $current_weather['clouds']['all']?>%</p>
+		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
 	                	</div>
 	                </div>
                 </div>

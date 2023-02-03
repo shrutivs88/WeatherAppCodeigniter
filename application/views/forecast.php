@@ -13,7 +13,7 @@
 
     <style>
         body {
-          
+
           padding: 4% 2%;
           background-color: #00bcd4;
           color: #fff;
@@ -54,7 +54,7 @@
             <div class="row">
               <div class="col-sm-12"><h1 style="margin-top: 2em">Where's your city?</h1></div>
               <div class="col-sm-12 cityinput">
-                <form method="POST" action="<?=site_url('weacast')?>">
+                <form method="POST" action="<?php site_url('weacast')?>">
                   <input type="text" class="form-control" placeholder="Your city's name" name="city"> 
                 </form>
               </div>
