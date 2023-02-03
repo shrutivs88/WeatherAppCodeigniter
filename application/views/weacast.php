@@ -18,6 +18,7 @@
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
+		
         .title {
           border-bottom: .1em solid #fff;
         }
@@ -118,7 +119,7 @@
 		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
 	                	</div>
 	                </div>
-					
+
                 </div>
                 <div class="col-sm-6" style="padding: 0 0 0 25px">
 	                <div class="title">
