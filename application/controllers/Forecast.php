@@ -6,7 +6,7 @@ class Forecast extends CI_Controller {
 	function __construct(){
         parent::__construct();
 		
-		//call model
+		// model call
         $this->load->model('M_Forecast');
     }
 

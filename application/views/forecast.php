@@ -48,7 +48,7 @@
 
         <div class="container homepage">
             <div class="row">
-                <div class="col-sm-12 title"><h1>WeatherCast</h1></div>
+                <div class="col-sm-12 title"><h1>Weather Cast</h1></div>
             </div>
             <div class="row">
               <div class="col-sm-12"><h1 style="margin-top: 2em">Where's your city?</h1></div>

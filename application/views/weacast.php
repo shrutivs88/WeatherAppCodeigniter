@@ -129,14 +129,13 @@
 			                <div class="row">
 				                <div class="col-sm-8 descript weather">
 					                <p><strong><?=$data['weather'][0]['main']?>, <?=$data['weather'][0]['description']?></strong></p>
-				                	<p><strong>Humidity:</strong> <?=$data['humidity']?>%</p>
-				                	<p><strong>Pressure:</strong> <?=$data['pressure']?> hPa</p>
-				                	<p><strong>Cloudiness:</strong> <?=$data['clouds']?>%</p>
-				                	<!-- <p><strong>Rain:</strong> <?=$data['rain']?> mm</p> -->
-		                			<p><strong>Wind Speed:</strong> <?=$data['speed']?> m/s</p>
+				                	<p><strong>Humidity:</strong> <?php $data['humidity']?>%</p>
+				                	<p><strong>Pressure:</strong> <?php $data['pressure']?> hPa</p>
+				                	<p><strong>Cloudiness:</strong> <?php $data['clouds']?>%</p>
+		                			<p><strong>Wind Speed:</strong> <?php $data['speed']?> m/s</p>
 			                	</div>
 			                	<div class="col-sm-4 descript">
-	                				<p><strong>Day:</strong> <?=$data['temp']['day']?>&deg;</p>
+	                				<p><strong>Day:</strong> <?php $data['temp']['day']?>&deg;</p>
 				                	<p><strong>Low:</strong> <?=$data['temp']['min']?>&deg;</p>
 				                	<p><strong>High:</strong> <?=$data['temp']['max']?>&deg;</p>
 	                				<p><strong>Morning:</strong> <?=$data['temp']['morn']?>&deg;</p>
