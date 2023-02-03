@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>WeaCast | <?=$title?></title>
+      <title>Weather Cast | <?=$title?></title>
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
       <!-- Latest compiled and minified CSS -->
@@ -12,7 +12,7 @@
     </head>
 
     <style>
-		
+
         body {
           padding: 4% 2%;
           background-color: #00bcd4;
