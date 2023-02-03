@@ -13,7 +13,6 @@
 
     <style>
         body {
-
           padding: 4% 2%;
           background-color: #00bcd4;
           color: #fff;
