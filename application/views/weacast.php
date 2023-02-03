@@ -18,7 +18,7 @@
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
-		
+
         .title {
           border-bottom: .1em solid #fff;
         }
@@ -75,7 +75,7 @@
         .weather {
         	border-right:1px solid #fff
         }
-
+ 		/** Media query */
         @media screen and (max-width: 767px) {
         	.level {
         		border-right: 0;
