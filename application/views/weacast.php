@@ -34,7 +34,7 @@
           color: #fff;
           padding: 0;
         }
-        /*----------------------------------------------------------*/
+       
         .cityinput input::-webkit-input-placeholder {
         	color: #f4f4f4;
         }
