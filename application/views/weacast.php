@@ -104,6 +104,7 @@
 		                	<p><strong>Sunset:</strong> <?php date('H:i:s', $current_weather['sys']['sunset']+25200)?></p>
 		                </div>
 	                </div>
+
 	                <div class="row listdata">
                 		<div class="col-sm-6 cityinput">
 							<form method="POST" action="<?php site_url('weacast')?>">
@@ -117,6 +118,7 @@
 		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
 	                	</div>
 	                </div>
+					
                 </div>
                 <div class="col-sm-6" style="padding: 0 0 0 25px">
 	                <div class="title">

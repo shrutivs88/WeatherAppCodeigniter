@@ -12,7 +12,7 @@ class M_Forecast extends CI_Model
 
 		 return $data;
     }
-
+	
     function forecast_weather($city)
     {
 		 //get JSON
