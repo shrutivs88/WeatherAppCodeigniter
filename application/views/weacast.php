@@ -26,6 +26,7 @@
           margin-top: 0;
           font-size: 4em;
         }
+		
         .cityinput input {
           border:0;
           border-radius: 6px;
@@ -81,7 +82,7 @@
         		border-right: 0;
         	}
         }
-		
+
     </style>
 
     <body>

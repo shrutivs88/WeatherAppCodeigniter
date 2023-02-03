@@ -34,6 +34,7 @@
           justify-content: center;
           margin-top: 1em;
         }
+        
         .cityinput input {
           border:0;
           border-radius: 6px;
@@ -43,7 +44,7 @@
           width: 14em;
           text-align: center;
         }
-        
+
     </style>
 
     <body>
