@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>WeatherCast | <?=$title?></title>
+      <title>Weather Cast | <?=$title?></title>
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
       <!-- Latest compiled and minified CSS -->
