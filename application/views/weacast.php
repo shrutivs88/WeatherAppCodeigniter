@@ -96,12 +96,12 @@
 		                	<p id="unit">Celcius</p>
 		                </div>
 		                <div class="col-sm-6 descript">
-		                	<p><strong>Low:</strong> <?=$current_weather['main']['temp_min']?>&deg;</p>
-		                	<p><strong>High:</strong> <?=$current_weather['main']['temp_max']?>&deg;</p>
-		                	<p><strong>Humidity:</strong> <?=$current_weather['main']['humidity']?>%</p>
-		                	<p><strong>Pressure:</strong> <?=$current_weather['main']['pressure']?> hPa</p>
-		                	<p><strong>Sunrise:</strong> <?=date('H:i:s', $current_weather['sys']['sunrise']+25200)?></p>
-		                	<p><strong>Sunset:</strong> <?=date('H:i:s', $current_weather['sys']['sunset']+25200)?></p>
+		                	<p><strong>Low:</strong> <?php $current_weather['main']['temp_min']?>&deg;</p>
+		                	<p><strong>High:</strong> <?php $current_weather['main']['temp_max']?>&deg;</p>
+		                	<p><strong>Humidity:</strong> <?php $current_weather['main']['humidity']?>%</p>
+		                	<p><strong>Pressure:</strong> <?php $current_weather['main']['pressure']?> hPa</p>
+		                	<p><strong>Sunrise:</strong> <?php date('H:i:s', $current_weather['sys']['sunrise']+25200)?></p>
+		                	<p><strong>Sunset:</strong> <?php date('H:i:s', $current_weather['sys']['sunset']+25200)?></p>
 		                </div>
 	                </div>
 	                <div class="row listdata">
@@ -136,11 +136,11 @@
 			                	</div>
 			                	<div class="col-sm-4 descript">
 	                				<p><strong>Day:</strong> <?php $data['temp']['day']?>&deg;</p>
-				                	<p><strong>Low:</strong> <?=$data['temp']['min']?>&deg;</p>
-				                	<p><strong>High:</strong> <?=$data['temp']['max']?>&deg;</p>
-	                				<p><strong>Morning:</strong> <?=$data['temp']['morn']?>&deg;</p>
-				                	<p><strong>Evening:</strong> <?=$data['temp']['eve']?>&deg;</p>
-				                	<p><strong>Night:</strong> <?=$data['temp']['night']?>&deg;</p>
+				                	<p><strong>Low:</strong> <?php $data['temp']['min']?>&deg;</p>
+				                	<p><strong>High:</strong> <?php $data['temp']['max']?>&deg;</p>
+	                				<p><strong>Morning:</strong> <?php $data['temp']['morn']?>&deg;</p>
+				                	<p><strong>Evening:</strong> <?php $data['temp']['eve']?>&deg;</p>
+				                	<p><strong>Night:</strong> <?php $data['temp']['night']?>&deg;</p>
 			                	</div>
 			                </div>
 		                </div>
