@@ -93,7 +93,7 @@
 	                <h2><?=$current_weather['name']?>, <?php $current_weather['sys']['country']?> | <?php date('d F Y', $current_weather['dt'])?></h2>
 	                <div class="row listdata">
 		                <div class="col-sm-6 level">
-		                	<p><strong><?=substr($current_weather['main']['temp'], 0, 2)?></strong> &deg;</p>
+		                	<p><strong><?php substr($current_weather['main']['temp'], 0, 2)?></strong> &deg;</p>
 		                	<p id="unit">Celcius</p>
 		                </div>
 		                <div class="col-sm-6 descript">
@@ -113,7 +113,7 @@
 			                </form>
 						</div>
 		                <div class="col-sm-6 descript">
-		                	<p><strong><?=$current_weather['weather'][0]['main']?>, <?php $current_weather['weather'][0]['description']?></strong></p>
+		                	<p><strong><?php $current_weather['weather'][0]['main']?>, <?php $current_weather['weather'][0]['description']?></strong></p>
 		                	<p><strong>Cloudiness:</strong> <?php $current_weather['clouds']['all']?>%</p>
 		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
 	                	</div>
@@ -129,7 +129,7 @@
 			                <h3><?=date('d F Y', $data['dt'])?></h3>
 			                <div class="row">
 				                <div class="col-sm-8 descript weather">
-					                <p><strong><?=$data['weather'][0]['main']?>, <?=$data['weather'][0]['description']?></strong></p>
+					                <p><strong><?php $data['weather'][0]['main']?>, <?php $data['weather'][0]['description']?></strong></p>
 				                	<p><strong>Humidity:</strong> <?php $data['humidity']?>%</p>
 				                	<p><strong>Pressure:</strong> <?php $data['pressure']?> hPa</p>
 				                	<p><strong>Cloudiness:</strong> <?php $data['clouds']?>%</p>
