@@ -81,6 +81,7 @@
         		border-right: 0;
         	}
         }
+		
     </style>
 
     <body>

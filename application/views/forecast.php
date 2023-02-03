@@ -18,7 +18,7 @@
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
-        
+
         .homepage {
           text-align: center;
         }
@@ -43,6 +43,7 @@
           width: 14em;
           text-align: center;
         }
+        
     </style>
 
     <body>
