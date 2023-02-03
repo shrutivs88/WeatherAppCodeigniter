@@ -13,8 +13,9 @@
 
     <style>
         body {
+		 background-image: url("/../assets/img/weather-icon/pic006.jpg");	
           padding: 4% 2%;
-          background-color: #00bcd4;
+          /* background-color: #00bcd4; */
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
@@ -34,7 +35,7 @@
           color: #fff;
           padding: 0;
         }
-        /*----------------------------------------------------------*/
+    
         .cityinput input::-webkit-input-placeholder {
         	color: #f4f4f4;
         }

@@ -4,7 +4,7 @@ class M_Forecast extends CI_Model
 {
     function current_weather($city)
     {
-		 //get JSON
+		//  get JSON
 		 $json = file_get_contents("http://api.openweathermap.org/data/2.5/weather?appid=63d957170f53f153512f19560d9b1137&units=metric&q=$city", false);
 
 		 $data = json_decode($json,true);
