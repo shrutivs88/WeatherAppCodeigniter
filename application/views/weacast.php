@@ -90,7 +90,7 @@
 	                <div class="title">
                 		<h1><strong>Current Weather</strong></h1>
 	                </div>
-	                <h2><?=$current_weather['name']?>, <?php $current_weather['sys']['country']?> | <?php date('d F Y', $current_weather['dt'])?></h2>
+	                <h2><?php $current_weather['name']?>, <?php $current_weather['sys']['country']?> | <?php date('d F Y', $current_weather['dt'])?></h2>
 	                <div class="row listdata">
 		                <div class="col-sm-6 level">
 		                	<p><strong><?php substr($current_weather['main']['temp'], 0, 2)?></strong> &deg;</p>
