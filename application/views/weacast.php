@@ -107,13 +107,13 @@
 	                </div>
 	                <div class="row listdata">
                 		<div class="col-sm-6 cityinput">
-							<form method="POST" action="<?=site_url('weacast')?>">
+							<form method="POST" action="<?php site_url('weacast')?>">
 								<label>Change location...</label>
 			                	<input type="text" class="form-control" placeholder="Your city's name" name="city"> 
 			                </form>
 						</div>
 		                <div class="col-sm-6 descript">
-		                	<p><strong><?=$current_weather['weather'][0]['main']?>, <?=$current_weather['weather'][0]['description']?></strong></p>
+		                	<p><strong><?=$current_weather['weather'][0]['main']?>, <?php $current_weather['weather'][0]['description']?></strong></p>
 		                	<p><strong>Cloudiness:</strong> <?php $current_weather['clouds']['all']?>%</p>
 		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
 	                	</div>
