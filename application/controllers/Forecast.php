@@ -6,7 +6,7 @@ class Forecast extends CI_Controller {
 	function __construct(){
         parent::__construct();
 		
-		// call model 
+		//call model
         $this->load->model('M_Forecast');
     }
 
@@ -15,7 +15,7 @@ class Forecast extends CI_Controller {
 		$data['title'] = "Home";
 		$this->load->view('forecast', $data);
 	}
-	
+
 	public function forecasting()
 	{
 		if(!empty($_POST['city'])) {

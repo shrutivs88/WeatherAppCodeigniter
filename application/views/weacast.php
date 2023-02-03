@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Weather Cast | <?=$title?></title>
+      <title>WeaCast | <?=$title?></title>
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
       <!-- Latest compiled and minified CSS -->
@@ -14,11 +14,10 @@
     <style>
         body {
           padding: 4% 2%;
-          background-color: #00bcd4; 
+          background-color: #00bcd4;
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
-
         .title {
           border-bottom: .1em solid #fff;
         }
@@ -26,7 +25,6 @@
           margin-top: 0;
           font-size: 4em;
         }
-		
         .cityinput input {
           border:0;
           border-radius: 6px;
@@ -36,7 +34,7 @@
           color: #fff;
           padding: 0;
         }
-    
+        /*----------------------------------------------------------*/
         .cityinput input::-webkit-input-placeholder {
         	color: #f4f4f4;
         }
@@ -76,13 +74,12 @@
         .weather {
         	border-right:1px solid #fff
         }
- 		/** Media query */
+
         @media screen and (max-width: 767px) {
         	.level {
         		border-right: 0;
         	}
         }
-
     </style>
 
     <body>
@@ -92,36 +89,34 @@
 	                <div class="title">
                 		<h1><strong>Current Weather</strong></h1>
 	                </div>
-	                <h2><?php $current_weather['name']?>, <?php $current_weather['sys']['country']?> | <?php date('d F Y', $current_weather['dt'])?></h2>
+	                <h2><?=$current_weather['name']?>, <?=$current_weather['sys']['country']?> | <?=date('d F Y', $current_weather['dt'])?></h2>
 	                <div class="row listdata">
 		                <div class="col-sm-6 level">
-		                	<p><strong><?php substr($current_weather['main']['temp'], 0, 2)?></strong> &deg;</p>
+		                	<p><strong><?=substr($current_weather['main']['temp'], 0, 2)?></strong> &deg;</p>
 		                	<p id="unit">Celcius</p>
 		                </div>
 		                <div class="col-sm-6 descript">
-		                	<p><strong>Low:</strong> <?php $current_weather['main']['temp_min']?>&deg;</p>
-		                	<p><strong>High:</strong> <?php $current_weather['main']['temp_max']?>&deg;</p>
-		                	<p><strong>Humidity:</strong> <?php $current_weather['main']['humidity']?>%</p>
-		                	<p><strong>Pressure:</strong> <?php $current_weather['main']['pressure']?> hPa</p>
-		                	<p><strong>Sunrise:</strong> <?php date('H:i:s', $current_weather['sys']['sunrise']+25200)?></p>
-		                	<p><strong>Sunset:</strong> <?php date('H:i:s', $current_weather['sys']['sunset']+25200)?></p>
+		                	<p><strong>Low:</strong> <?=$current_weather['main']['temp_min']?>&deg;</p>
+		                	<p><strong>High:</strong> <?=$current_weather['main']['temp_max']?>&deg;</p>
+		                	<p><strong>Humidity:</strong> <?=$current_weather['main']['humidity']?>%</p>
+		                	<p><strong>Pressure:</strong> <?=$current_weather['main']['pressure']?> hPa</p>
+		                	<p><strong>Sunrise:</strong> <?=date('H:i:s', $current_weather['sys']['sunrise']+25200)?></p>
+		                	<p><strong>Sunset:</strong> <?=date('H:i:s', $current_weather['sys']['sunset']+25200)?></p>
 		                </div>
 	                </div>
-
 	                <div class="row listdata">
                 		<div class="col-sm-6 cityinput">
-							<form method="POST" action="<?php site_url('weacast')?>">
+							<form method="POST" action="<?=site_url('weacast')?>">
 								<label>Change location...</label>
 			                	<input type="text" class="form-control" placeholder="Your city's name" name="city"> 
 			                </form>
 						</div>
 		                <div class="col-sm-6 descript">
-		                	<p><strong><?php $current_weather['weather'][0]['main']?>, <?php $current_weather['weather'][0]['description']?></strong></p>
-		                	<p><strong>Cloudiness:</strong> <?php $current_weather['clouds']['all']?>%</p>
-		                	<p><strong>Wind Speed:</strong> <?php $current_weather['wind']['speed']?> m/s</p>
+		                	<p><strong><?=$current_weather['weather'][0]['main']?>, <?=$current_weather['weather'][0]['description']?></strong></p>
+		                	<p><strong>Cloudiness:</strong> <?=$current_weather['clouds']['all']?>%</p>
+		                	<p><strong>Wind Speed:</strong> <?=$current_weather['wind']['speed']?> m/s</p>
 	                	</div>
 	                </div>
-
                 </div>
                 <div class="col-sm-6" style="padding: 0 0 0 25px">
 	                <div class="title">
@@ -133,19 +128,19 @@
 			                <h3><?=date('d F Y', $data['dt'])?></h3>
 			                <div class="row">
 				                <div class="col-sm-8 descript weather">
-					                <p><strong><?php $data['weather'][0]['main']?>, <?php $data['weather'][0]['description']?></strong></p>
-				                	<p><strong>Humidity:</strong> <?php $data['humidity']?>%</p>
-				                	<p><strong>Pressure:</strong> <?php $data['pressure']?> hPa</p>
-				                	<p><strong>Cloudiness:</strong> <?php $data['clouds']?>%</p>
-		                			<p><strong>Wind Speed:</strong> <?php $data['speed']?> m/s</p>
+					                <p><strong><?=$data['weather'][0]['main']?>, <?=$data['weather'][0]['description']?></strong></p>
+				                	<p><strong>Humidity:</strong> <?=$data['humidity']?>%</p>
+				                	<p><strong>Pressure:</strong> <?=$data['pressure']?> hPa</p>
+				                	<p><strong>Cloudiness:</strong> <?=$data['clouds']?>%</p>
+		                			<p><strong>Wind Speed:</strong> <?=$data['speed']?> m/s</p>
 			                	</div>
 			                	<div class="col-sm-4 descript">
-	                				<p><strong>Day:</strong> <?php $data['temp']['day']?>&deg;</p>
-				                	<p><strong>Low:</strong> <?php $data['temp']['min']?>&deg;</p>
-				                	<p><strong>High:</strong> <?php $data['temp']['max']?>&deg;</p>
-	                				<p><strong>Morning:</strong> <?php $data['temp']['morn']?>&deg;</p>
-				                	<p><strong>Evening:</strong> <?php $data['temp']['eve']?>&deg;</p>
-				                	<p><strong>Night:</strong> <?php $data['temp']['night']?>&deg;</p>
+	                				<p><strong>Day:</strong> <?=$data['temp']['day']?>&deg;</p>
+				                	<p><strong>Low:</strong> <?=$data['temp']['min']?>&deg;</p>
+				                	<p><strong>High:</strong> <?=$data['temp']['max']?>&deg;</p>
+	                				<p><strong>Morning:</strong> <?=$data['temp']['morn']?>&deg;</p>
+				                	<p><strong>Evening:</strong> <?=$data['temp']['eve']?>&deg;</p>
+				                	<p><strong>Night:</strong> <?=$data['temp']['night']?>&deg;</p>
 			                	</div>
 			                </div>
 		                </div>

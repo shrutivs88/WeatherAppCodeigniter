@@ -1,13 +1,13 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Weather Cast | <?=$title?></title>
+      <title>WeaCast | <?=$title?></title>
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      <!-- Let browser know website is optimized for mobile -->
+      <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
@@ -18,7 +18,6 @@
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
-
         .homepage {
           text-align: center;
         }
@@ -34,7 +33,6 @@
           justify-content: center;
           margin-top: 1em;
         }
-        
         .cityinput input {
           border:0;
           border-radius: 6px;
@@ -44,19 +42,18 @@
           width: 14em;
           text-align: center;
         }
-
     </style>
 
     <body>
 
         <div class="container homepage">
             <div class="row">
-                <div class="col-sm-12 title"><h1>Weather Cast</h1></div>
+                <div class="col-sm-12 title"><h1>WeaCast</h1></div>
             </div>
             <div class="row">
               <div class="col-sm-12"><h1 style="margin-top: 2em">Where's your city?</h1></div>
               <div class="col-sm-12 cityinput">
-                <form method="POST" action="<?php site_url('weacast')?>">
+                <form method="POST" action="<?=site_url('weacast')?>">
                   <input type="text" class="form-control" placeholder="Your city's name" name="city"> 
                 </form>
               </div>
