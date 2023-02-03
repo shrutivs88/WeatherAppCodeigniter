@@ -18,6 +18,7 @@
           color: #fff;
           font-family: 'Raleway', sans-serif;
         }
+        
         .homepage {
           text-align: center;
         }
